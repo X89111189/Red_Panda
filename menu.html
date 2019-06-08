@@ -13,11 +13,72 @@
 
   <!--Let browser know website is optimized for mobile-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Custom Materialize Theme</title>
+  <title>Menu</title>
 
 </head>
 
 <body>
+
+  <div class="navbar-fixed" id="redpanda">
+    <nav class="red darken-4">
+      <div class="container">
+        <div class="nav-wrapper">
+          <a href="#redpanda" class="brand-logo"><b>Red Panda</b></a>
+          <a href="#" data-activates="mobile-nav" class="button-collapse">
+            <i class="material-icons">menu</i>
+          </a>
+          <ul class="right hide-on-med-and-down">
+            <li>
+              <a href="index.html"><b>Home</b></a>
+            </li>
+            <li class="active">
+              <a href="menu.html" class="grey lighten-2 red-text text-darken-4"><b>Menu</b></a>
+            </li>
+            <li>
+              <a href="delivery.html"><b>Delivery</b></a>
+            </li>
+            <li>
+              <a href="reservation.html"><b>Reservation</b></a>
+            </li>
+            <li>
+              <a href="dashboard.html"><b>Dashboard</b></a>
+            </li>
+            <li>
+              <a href="careers.html"><b>Careers</b></a>
+            </li>
+            <li>
+              <a href="contact.html"><b>Contact</b></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <!-- SIDE NAV -->
+  <ul class="side-nav" id="mobile-nav">
+    <h4 class="red darken-4 white-text center"><b>Red Panda</b></h4>
+    <li>
+      <a href="index.html"><b>Home</b></a>
+    </li>
+    <li class="active">
+      <a href="menu.html" class="grey lighten-2 red-text text-darken-4"><b>Menu</b></a>
+    </li>
+    <li>
+      <a href="delivery.html"><b>Delivery</b></a>
+    </li>
+    <li>
+      <a href="reservation.html"><b>Reservation</b></a>
+    </li>
+    <li>
+      <a href="dashboard.html"><b>Dashboard</b></a>
+    </li>
+    <li>
+      <a href="careers.html"><b>Careers</b></a>
+    </li>
+    <li>
+      <a href="contact.html"><b>Contact</b></a>
+    </li>
+  </ul>
 
   <!-- Menu SCROLLSPY -->
   <div class="container">
@@ -169,8 +230,56 @@
         </ul>
       </div>
     </div>
-    <div style="margin-top:300px;"></div>
   </div>
+
+<!-- FOOTER -->
+<footer class="page-footer grey darken-4">
+  <div class="container">
+    <div class="row">
+      <div class="col s12 m6">
+        <h5 class="red-text text-lighten-1"><b>Branches</b></h5>
+        <p>Address: 30 Visayas Avenue, Bahay Toro, Quezon City<br>
+        Phone: (02) 376 6491<br><br>
+        Address: 48 East Capitol Drive, Kapitolyo, Pasig City<br>
+        Phone: (02) 475 0877</p>
+      </div>
+      <div class="col s12 m4 offset-m2">
+        <h5 class="red-text text-lighten-1"><b>Links</b></h5>
+        <ul>
+          <li>
+            <a class="white-text" href="index.html">Home</a>
+          </li>
+          <li>
+            <a class="white-text" href="menu.html">Menu</a>
+          </li>
+          <li>
+            <a class="white-text" href="delivery.html">Delivery</a>
+          </li>
+          <li>
+            <a class="white-text" href="reservation.html">Reservation</a>
+          </li>
+          <li>
+            <a class="white-text" href="dashboard.html">Dashboard</a>
+          </li>
+          <li>
+            <a class="white-text" href="careers.html">Careers</a>
+          </li>
+          <li>
+            <a class="white-text" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright grey darken-2">
+    <div class="container">
+      🔴🐼 © 2019
+        <a class="grey-text text-lighten-2 right" href="#redpanda">
+          <i class="material-icons left">keyboard_arrow_up</i>Back To Top
+        </a>
+    </div>
+  </div>
+</footer>
 
 <!--Import jQuery before materialize.js-->
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
@@ -187,12 +296,14 @@
       // jQuery for SLIDER
       $('.slider').slider({
         indicators: true,
-        height: 125, //for image
+        height: 105, //for image
         transition: 1000, //of texts
         interval: 5000 //between images
       });
       // jQuery for SCROLLSPY
       $('.scrollspy').scrollSpy();
+      // jQuery for SIDE NAV
+      $('.button-collapse').sideNav();
     });
   </script>
 
