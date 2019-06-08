@@ -1,0 +1,44 @@
+.loader {
+    position: absolute;
+    top: 40%;
+    left: 47%;
+    
+}
+
+
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+.spinbox { 
+    text-align: right; 
+}
+
+.card {
+  border:1px solid rgba(167, 0, 0, 0.5);  
+   margin-top:10px;
+  
+}
+
+p {
+  font-family: 'Segoe UI';
+  font-size: 15;
+}
+
+h5 {
+  font-family: 'Segoe UI';
+  font-size: 15;
+}
+
+td {
+  font-family: 'Segoe UI';
+  font-size: 15;
+}
+
+.spinbox {
+  width: 23%;
+}
